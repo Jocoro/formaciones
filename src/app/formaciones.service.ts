@@ -4,7 +4,7 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class FormacionesService {
-url:string="http://localhost:9500/formaciones"
+url:string="http://localhost:10000/sformacion/formaciones"
   constructor(private http:HttpClient) { }
   formaciones(){
     return this.http.get<Formacion[]>(this.url)
